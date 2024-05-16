@@ -1,0 +1,25 @@
+# config/packages/easy_admin.yaml
+
+easy_admin:
+    entities:
+        Enseignant:
+            class: App\Entity\Enseignant
+            controller: App\Controller\Admin\EnseignantCrudController
+        Etudiant:
+            class: App\Entity\Etudiant
+            controller : App\Controller\Admin\EtudiantCrudController
+        Filiere:
+            class: App\Entity\Filiere
+            controller : App\Controller\Admin\FiliereCrudController
+        Module:
+            class: App\Entity\Module
+            controller : App\Controller\Admin\ModuleCrudController
+        Note:
+            class: App\Entity\Note
+            controller : App\Controller\Admin\NoteCrudController
+        Semestre:
+            class: App\Entity\Semestre
+            controller: App\Controller\Admin\SemestreCrudController
+        User:
+            class: App\Entity\User
+            controller : App\Controller\Admin\UserCrudController
